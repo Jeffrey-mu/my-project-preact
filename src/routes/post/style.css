@@ -1,0 +1,49 @@
+.post {
+}
+.post .card {
+	flex-direction: column;
+	position: relative;
+	display: flex;
+	text-align: center;
+	max-width: 700px;
+	margin: 50px 0;
+	min-height: 200px;
+	transition: all .2s;
+	cursor: pointer;
+	font-family:"TInter var experimental", "Inter var", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.card img {
+	border-radius: 20px;
+	/* position: absolute; */
+	/* z-index: -1; */
+	/* height: 100%; */
+	filter: blur(0px);
+	transition: all 0.2s;
+}
+.card img:hover {
+  transform: scale(1.1);
+}
+.card h2 {
+	color: #673ab8;
+}
+.post p {
+	text-align: left;
+	/* margin-left: 60%; */
+	/* width: 40%; */
+	line-height: 30px;
+	padding-left:20px;
+	background: #673ab8;
+	border-radius: 10px;
+	color:rgba(255,255,255,1)
+
+}
+@media (prefers-color-scheme: dark) {
+	.resource {
+		color: #fff;
+		background-color: #181818;
+	}
+	.resource:hover {
+		border: 1px solid #bbb;
+		box-shadow: 0 25px 50px -12px #673ab888;
+	}
+}

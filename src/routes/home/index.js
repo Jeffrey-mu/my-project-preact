@@ -29,7 +29,7 @@ const Home = () => {
 	);
 };
 
-const Resource = props => {
+export const Resource = props => {
 	return (
 		<a href={props.link} class={style.resource}>
 			<h2>{props.title}</h2>
