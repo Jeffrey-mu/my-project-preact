@@ -1,6 +1,6 @@
 import { h } from 'preact';
 import { useEffect, useState } from 'preact/hooks';
-
+import { Button, Icon } from '../../components/goober'
 // Note: `user` comes from the URL, courtesy of our router
 const Profile = ({ user }) => {
 	const [time, setTime] = useState(Date.now());
@@ -13,14 +13,14 @@ const Profile = ({ user }) => {
 
 	return (
 		<div>
-			<h1>Profile: {user}</h1>
+			<h1>Profile: <Icon>{user}</Icon> </h1>
 			<p>This is the user profile for a user named {user}.</p>
 
 			<div>Current time: {new Date(time).toLocaleString()}</div>
-
 			<p>
-				<button onClick={() => setCount(count => count + 1)}>Click Me</button>{' '}
-				Clicked {count} times.
+				<Button onClick={() => setCount(count => count + 1)}>
+					Click Me{' '}
+				</Button>Clicked {count} times.
 			</p>
 		</div>
 	);
